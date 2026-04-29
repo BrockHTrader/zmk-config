@@ -1,16 +1,50 @@
 if SHIELD_MINT34_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "mint34"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-endif # SHIELD_MINT34_LEFT
-
-if SHIELD_MINT34_LEFT || SHIELD_MINT34_RIGHT
+    default "Mint34"
 
 config ZMK_SPLIT
     default y
 
-endif # SHIELD_MINT34_LEFT || SHIELD_MINT34_RIGHT
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+endif # SHIELD_MINT34_LEFT
+
+if SHIELD_MINT34_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Mint34"
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
+
+endif # SHIELD_MINT34_RIGHT
+
+if SHIELD_MINT34_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "Mint34"
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+config BT_MAX_CONN
+    default 7
+
+config BT_MAX_PAIRED
+    default 7
+
+config ZMK_USB
+    default y
+
+endif # SHIELD_MINT34_DONGLE
