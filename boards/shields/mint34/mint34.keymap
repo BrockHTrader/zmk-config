@@ -263,7 +263,7 @@
                 &kp Z            &kp X            &kp C            &kp V            &kp B
                 &kp N            &kp M            &td_comma CAPS COMMA  &kp DOT     &kp FSLH
                                                   &kp RET          &mo SYM
-                                                  &th_bsp NAV BSPC  &th_spc FUN SPC
+                                                  &th_spc FUN SPC  &th_bsp NAV BSPC
             >;
         };
 
