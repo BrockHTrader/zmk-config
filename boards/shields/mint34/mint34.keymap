@@ -241,6 +241,13 @@
             key-positions = <12 14>;
             bindings = <&kp SPC>;
         };
+
+        /* P (9) + SYM thumb (32) = BT_CLR_ALL */
+        combo_bt_clr {
+            timeout-ms = <100>;
+            key-positions = <9 32>;
+            bindings = <&bt BT_CLR_ALL>;
+        };
     };
 
     keymap {
