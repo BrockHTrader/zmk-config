@@ -5,7 +5,6 @@
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &default_layout;
-        zephyr,console = &cdc_acm_uart0;
     };
 
     mock_kscan: mock_kscan_0 {
@@ -29,11 +28,5 @@
                             RC(3,3) RC(3,4)
                             RC(3,5) RC(3,6)
         >;
-    };
-};
-
-&zephyr_udc0 {
-    cdc_acm_uart0: cdc_acm_uart0 {
-        compatible = "zephyr,cdc-acm-uart";
     };
 };
